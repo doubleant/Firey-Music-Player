@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiery Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+      
+</head>
+<body>
+    <div class="bg-particles" id="particles"></div>
+    
+    <div class="player-container">
+        <div class="album-section">
+            <div class="album-art-container">
+                <img id="albumArt" class="album-art" src="https://via.placeholder.com/250x250/ff4444/ffffff?text=Album+Art" alt="Album Art">
+            </div>
+            <div class="track-info">
+                <div id="trackTitle" class="track-title">Track Title</div>
+                <div id="trackArtist" class="track-artist">Artist Name</div>
+                <div id="trackAlbum" class="track-album">Album Name</div>
+                <div id="trackYear" class="track-year">2024</div>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-display">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn extra" id="shuffleBtn" title="Shuffle">🔀</button>
+            <button class="control-btn secondary" id="prevBtn" title="Previous">⏮</button>
+            <button class="control-btn main" id="playPauseBtn" title="Play/Pause">▶</button>
+            <button class="control-btn secondary" id="stopBtn" title="Stop">⏹</button>
+            <button class="control-btn secondary" id="nextBtn" title="Next">⏭</button>
+            <button class="control-btn extra" id="repeatBtn" title="Repeat">🔁</button>
+        </div>
+
+        <div class="volume-container">
+            <span>🔊</span>
+            <div class="volume-slider" id="volumeSlider">
+                <div class="volume-fill" id="volumeFill"></div>
+            </div>
+            <span id="volumePercent">70%</span>
+        </div>
+
+        <div class="playlist" id="playlist">
+            <!-- Playlist items will be dynamically added here -->
+        </div>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    
+</body>
+</html>
